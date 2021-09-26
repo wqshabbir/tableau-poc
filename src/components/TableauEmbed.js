@@ -6,14 +6,10 @@ function TableauEmbed()
 {
     const ref = useRef(null);
     console.log (ref);
-    const url = "https://public.tableau.com/views/WorldIndicators/GDPpercapita";
-
-    const options = {
-        device: "desktop",
-    }
+    const url = "https://public.tableau.com/views/RegionalSampleWorkbook/Storms";
 
     function initViz() {
-        new tableau.Viz(ref.current, url, options);
+        new tableau.Viz(ref.current, url);
     }
 
     useEffect(() => {
